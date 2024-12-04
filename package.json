@@ -1,0 +1,7 @@
+{
+  "main": "./run.js",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
+}

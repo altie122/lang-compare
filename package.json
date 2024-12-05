@@ -1,4 +1,5 @@
 {
+  "name": "lang-compare",
   "main": "./run.js",
   "type": "module",
   "dependencies": {

@@ -27,7 +27,7 @@ function runCommand(command) {
         console.log(chalk.green("JavaScript Output:\n") + chalk.magenta(jsOutput));
 
         console.log(chalk.green("Running Ruby script..."));
-        const rbOutput =  "skipped\n" //await runCommand("ruby main.rb");
+        const rbOutput =  /*"skipped\n"*/ await runCommand("ruby main.rb");
         console.log(chalk.green("Ruby Output:\n") + chalk.magenta(rbOutput));
 
         console.log(chalk.green("Running Rust script..."));
@@ -37,6 +37,10 @@ function runCommand(command) {
         console.log(chalk.green("Running Go script..."));
         const goOutput = await runCommand("go run main.go");
         console.log(chalk.green("Go Output:\n") + chalk.magenta(goOutput));
+
+        console.log(chalk.green("Running Java script..."));
+        const javaOutput = await runCommand("java main");
+        console.log(chalk.green("Java Output:\n") + chalk.magenta(javaOutput));
     } catch (error) {
         console.error(error);
     }

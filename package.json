@@ -7,6 +7,7 @@
   },
   "scripts": {
     "start": "node ./run.js",
-    "install:all": "npm install && cargo install cargo-script"
+    "install:all": "npm install && cargo install cargo-script",
+    "compile:java": "javac main.java"
   }
 }

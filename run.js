@@ -29,6 +29,10 @@ function runCommand(command) {
         console.log(chalk.green("Running Ruby script..."));
         const rbOutput = await runCommand("ruby main.rb");
         console.log(chalk.green("Ruby Output:\n") + chalk.magenta(rbOutput));
+
+        console.log(chalk.green("Running Rust script..."));
+        const rsOutput = await runCommand("cargo script main.rs");
+        console.log(chalk.green("Rust Output:\n") + chalk.magenta(rsOutput));
     } catch (error) {
         console.error(error);
     }

@@ -23,3 +23,11 @@ npm compile:java - Compiles the Java code
 
 node . - Runs all of the files
 
+## Files:
+`main.go` - Go gen code
+`main.java` - Java gen code
+`main.js` - JavaScript gen code
+`main.py` - Python gen code
+`main.rb` - Ruby gen code
+`main.rs` - Rust gen code
+`run.js` - Main file that runs all the other files
